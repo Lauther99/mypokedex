@@ -5,6 +5,7 @@ import Header from './components/Header'
 import InputName from './components/InputName'
 import Pokedex from './components/Pokedex'
 import Pokemon from './components/Pokemon'
+
 import ProtectedRoutes from './components/ProtectedRoutes'
 
 function App() {

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useApi from '../hooks/useApi'
 import Pagination from './Pagination'
 import PokedexCard from './PokedexCard'
+import Footer from './Footer'
 import '../assets/style/pokedex.css'
 
 function Pokedex() {
@@ -77,6 +78,7 @@ function Pokedex() {
             <ul className='poke-cards-container'>
                 {getPorkedexCards()}
             </ul>
+            <Footer />
         </section>
     )
 }

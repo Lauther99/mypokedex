@@ -9,6 +9,7 @@ function InputName() {
     const [inputName, setInputName] = useState('');
     const videoUrl = 'https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.mp4'
     const poster = 'https://images.alphacoders.com/124/1246940.jpg'
+    const userName = useSelector(state => state.userName)
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -21,11 +22,9 @@ function InputName() {
         }
     }
 
-    return (
-        <>
-            <section className='trainer-container'>
-                <video src={videoUrl} autoPlay muted loop poster={poster} type="video/mp4">
-                </video>
+    function setBody() {
+        if (userName.length <= 0) {
+            return (
                 <article className='input-container'>
                     <article className='words-container'>
                         <div className='words'>
@@ -45,6 +44,32 @@ function InputName() {
                         </div>
                     </article>
                 </article>
+            )
+        } else {
+            return (
+                <article className='words-container'>
+                    <br />
+                    <div className='words'>
+                        <span>LET'S</span>
+                    </div>
+                    <div className='words'>
+                        <span>GO</span>
+                    </div>
+                    <div className='words'>
+                        <span>{userName}</span>
+                    </div>
+                </article>
+            )
+        }
+    }
+
+
+    return (
+        <>
+            <section className='trainer-container'>
+                <video src={videoUrl} autoPlay muted loop poster={poster} type="video/mp4">
+                </video>
+                {setBody()}
             </section>
         </>
     )
