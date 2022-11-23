@@ -1,0 +1,21 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.page-link{
+    color: #fbc531;
+    background: white;
+    --bs-pagination-border-radius: none;
+}
+
+.pagination a:active{
+    background-color: pink;
+}
+
+.pagination a:hover{
+    background: #fbc531;
+    color: white;
+}
+

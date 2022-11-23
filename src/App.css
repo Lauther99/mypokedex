@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+html{
+    background-color: #0b0e19;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgba(8, 34, 78, 0.252);
+    background-repeat: repeat-y;
+    z-index: -1;
+}
+
+

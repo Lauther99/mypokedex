@@ -1,0 +1,98 @@
+.poke-search-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 4rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+
+.poke-search {
+    position: absolute;
+    top: 2.5rem;
+    left: 29%;
+    transform: translate(-50%, 50%);
+    background: #fbc531;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.poke-search:hover input {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.poke-search:hover button {
+    background: #fff;
+    color: rgba(8, 34, 78, .9);
+}
+
+.poke-search button {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fbc531;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.poke-search input {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.poke-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.poke-filter select {
+    width: 240px;
+    height: 60px;
+    border-radius: 25px;
+    background: #fbc531;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.poke-search-container h2 {
+    color: #fff;
+    font-size: 25px;
+
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
