@@ -24,11 +24,10 @@ function PokedexCard({ urlPokemon }) {
         return str?.join('')
     }
 
-    addZeros('12')
     return (
         <li className='poke-card'>
             <Link to={`/pokedex/${pokemon?.id}`}>
-                <img src={pokemon?.sprites?.front_default} alt="" />
+                <img src={pokemon?.sprites?.other['official-artwork']?.front_default} alt="" />
                 <p>
                     <span>
                         {`N° ${addZeros(pokemon?.id?.toString())}`}

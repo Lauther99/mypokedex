@@ -42,7 +42,7 @@ function Pokemon() {
                 someError ? <h1>Something bad happened</h1> : (
                     <article className='pokemon-container'>
                         <div className='justadiv'></div>
-                        <img src={pokemon?.sprites?.front_default} alt="" />
+                        <img src={pokemon?.sprites?.other['official-artwork']?.front_default} alt="" />
                         <div className='poke-description'>
                             <div className='arrow-icon back-icon' onClick={goBack}>
                                 <i className="fa-solid fa-left-long fa-2xl"></i>

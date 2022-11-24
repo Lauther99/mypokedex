@@ -13,8 +13,8 @@
 }
 
 .justadiv {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     position: relative;
     margin: auto;
     background: #fffa65;
@@ -42,10 +42,10 @@
 }
 
 .pokemon-container img {
-    width: 250px;
+    width: 380px;
     position: absolute;
-    top: 28%;
-    left: 18%;
+    top: 24%;
+    left: 12%;
 }
 
 .poke-description {
