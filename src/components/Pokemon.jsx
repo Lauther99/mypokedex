@@ -16,6 +16,7 @@ function Pokemon() {
         someError: someError
     }] = useApi();
     const [{ getClassColor: getClassColor }] = useColor()
+    const videoUrl = 'https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/pokemon-center.mp4'
 
     useEffect(() => {
         getPokemonData({ id: id })
@@ -27,7 +28,7 @@ function Pokemon() {
 
     const nextPokemon = () => {
         const prevId = parseInt(id) + 1
-        prevId > 10249? navigate(`/pokedex/`) : navigate(`/pokedex/${prevId}`)
+        prevId > 10249 ? navigate(`/pokedex/`) : navigate(`/pokedex/${prevId}`)
     }
 
     const prevPokemon = () => {
@@ -41,6 +42,10 @@ function Pokemon() {
             {
                 someError ? <h1>Something bad happened</h1> : (
                     <article className='pokemon-container'>
+                        <div className='video-container'>
+                            <video src={videoUrl} autoPlay muted loop type="video/mp4">
+                            </video>
+                        </div>
                         <div className='justadiv'></div>
                         <img src={pokemon?.sprites?.other['official-artwork']?.front_default} alt="" />
                         <div className='poke-description'>
@@ -64,12 +69,12 @@ function Pokemon() {
                             </div>
                         </div>
                         <div className='arrow-icon next-pokemon' onClick={nextPokemon}>
-                            <p>Next</p>
+                            <p>Next Pokemon</p>
                             <i className="fa-solid fa-right-long fa-2xl"></i>
                         </div>
                         <div className='arrow-icon previous-pokemon' onClick={prevPokemon}>
                             <i className="fa-solid fa-left-long fa-2xl"></i>
-                            <p>Previous</p>
+                            <p>Previous Pokemon</p>
                         </div>
                     </article>
                 )
