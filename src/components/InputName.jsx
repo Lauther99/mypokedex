@@ -47,7 +47,7 @@ function InputName() {
             )
         } else {
             return (
-                <article className='words-container'>
+                <article className='words-container' onClick={() => navigate('/pokedex')} style={{cursor: 'pointer'}}>
                     <br />
                     <div className='words'>
                         <span>LET'S</span>
