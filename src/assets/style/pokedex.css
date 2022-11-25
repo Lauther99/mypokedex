@@ -96,3 +96,22 @@
         background-position: 0 0;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .poke-search-container{
+        height: 350px;
+        padding: none;
+        margin: none;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .poke-search-container h2{
+        font-weight: 600;
+    }
+
+    .poke-search{
+        top: 3.5rem;
+        left: 50%;
+    }
+}

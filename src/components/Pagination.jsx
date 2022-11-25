@@ -17,7 +17,7 @@ const Pagination = ({totalPokemons, pokemonsPerPage, setCurrentPage }) => {
     }
 
     return (
-        <div>
+        <div id='pagination'>
             <ReactPaginate 
             previousLabel={'Prev'}
             nextLabel={'Next'}

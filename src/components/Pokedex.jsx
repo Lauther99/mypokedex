@@ -70,11 +70,11 @@ function Pokedex() {
                     </select>
                 </div>
             </article>
-            <Pagination
-                totalPokemons={allPokeUrls.length}
-                pokemonsPerPage={pokemonsPerPage}
-                setCurrentPage={setCurrentPage}
-            />
+                <Pagination
+                    totalPokemons={allPokeUrls.length}
+                    pokemonsPerPage={pokemonsPerPage}
+                    setCurrentPage={setCurrentPage}
+                />
             <ul className='poke-cards-container'>
                 {getPorkedexCards()}
             </ul>

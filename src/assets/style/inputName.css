@@ -90,3 +90,38 @@
         color: yellow;
     }
 }
+
+@media screen and (max-width: 1000px){
+    .input-container{
+        flex-direction: column;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+    body{
+        background-image: url('https://i.pinimg.com/564x/22/ee/8e/22ee8e85b2c1ac0395145a26dee41f60.jpg');
+        background-size: 100% 100%;
+    }
+    
+    .words span {
+        font-size: 2.5rem;
+        animation: move 3s ease-in-out infinite alternate;
+    }
+
+    .input-name-container input{
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translate(-5%, 0%);
+            color: yellow;
+        }
+    
+        100% {
+            transform: translate(20%, 0);
+            color: yellow;
+        }
+    }
+}

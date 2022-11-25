@@ -37,7 +37,9 @@ const Header = () => {
                         <div className='welcome'>
                             <p>{transformString(`Welcome! ${userName}`)}</p>
                         </div>
-                        <h5 onClick={() => {logout()}}>Logout</h5>
+                        <h5 onClick={() => { logout() }}>
+                            <i className="fa-solid fa-right-from-bracket fa-xl"></i>
+                        </h5>
                     </div>
                 </article>
             )
