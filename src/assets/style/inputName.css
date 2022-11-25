@@ -99,7 +99,7 @@
     }
     body{
         background-image: url('https://i.pinimg.com/564x/22/ee/8e/22ee8e85b2c1ac0395145a26dee41f60.jpg');
-        background-size: 100% 100%;
+        background-size: 100% 100vh;
     }
     
     .words span {
