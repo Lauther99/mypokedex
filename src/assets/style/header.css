@@ -156,9 +156,7 @@
 
 @media screen and (max-width: 1000px){
     .header-container{
-        
-        background: transparent;
-        
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     .welcome {
@@ -177,8 +175,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 10px;
         padding-right: 2rem;
+        background-color: transparent;
     }
 }
